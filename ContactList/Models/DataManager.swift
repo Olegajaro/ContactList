@@ -6,10 +6,10 @@
 //
 
 class DataManager {
-    let names: [String]
-    let surnames: [String]
-    let phones: [String]
-    let emails: [String]
+    var names: [String]
+    var surnames: [String]
+    var phones: [String]
+    var emails: [String]
     
     init(names: [String], surnames: [String], phones: [String], emails: [String]) {
         self.names = names
