@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		101D176226E91A3300C8797E /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101D176126E91A3300C8797E /* MainViewController.swift */; };
+		101D176426E926AC00C8797E /* SecondContactListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101D176326E926AC00C8797E /* SecondContactListViewController.swift */; };
 		1052808C26E7E94600D909A2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1052808B26E7E94600D909A2 /* AppDelegate.swift */; };
 		1052808E26E7E94600D909A2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1052808D26E7E94600D909A2 /* SceneDelegate.swift */; };
 		1052809026E7E94600D909A2 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1052808F26E7E94600D909A2 /* InfoViewController.swift */; };
@@ -20,6 +22,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		101D176126E91A3300C8797E /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		101D176326E926AC00C8797E /* SecondContactListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondContactListViewController.swift; sourceTree = "<group>"; };
 		1052808826E7E94600D909A2 /* ContactList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ContactList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1052808B26E7E94600D909A2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1052808D26E7E94600D909A2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -106,6 +110,8 @@
 			children = (
 				1052808F26E7E94600D909A2 /* InfoViewController.swift */,
 				105280AA26E7FBD000D909A2 /* ContactListViewController.swift */,
+				101D176126E91A3300C8797E /* MainViewController.swift */,
+				101D176326E926AC00C8797E /* SecondContactListViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -190,8 +196,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				101D176226E91A3300C8797E /* MainViewController.swift in Sources */,
 				1052809026E7E94600D909A2 /* InfoViewController.swift in Sources */,
 				105280A926E7EA4D00D909A2 /* DataManager.swift in Sources */,
+				101D176426E926AC00C8797E /* SecondContactListViewController.swift in Sources */,
 				1052808C26E7E94600D909A2 /* AppDelegate.swift in Sources */,
 				105280A726E7EA3C00D909A2 /* Person.swift in Sources */,
 				1052808E26E7E94600D909A2 /* SceneDelegate.swift in Sources */,

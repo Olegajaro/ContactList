@@ -23,14 +23,11 @@ struct Person {
         let phonesPersons = Set(DataManager.data().phones)
         let emailsPersons = Set(DataManager.data().emails)
         
-        let sequenceNameSurname = Dictionary(
-            uniqueKeysWithValues: zip(
+        let sequenceNameSurname = Dictionary(uniqueKeysWithValues: zip(
                 namesPersons,
                 surnamesPersons
             ))
-        
-        let sequencePhoneEmail = Dictionary(
-            uniqueKeysWithValues: zip(
+        let sequencePhoneEmail = Dictionary(uniqueKeysWithValues: zip(
                 phonesPersons,
                 emailsPersons
             ))
@@ -53,3 +50,4 @@ struct Person {
         return persons
     }
 }
+
