@@ -108,10 +108,10 @@
 		105280A426E7E9E700D909A2 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				1052808F26E7E94600D909A2 /* InfoViewController.swift */,
-				105280AA26E7FBD000D909A2 /* ContactListViewController.swift */,
 				101D176126E91A3300C8797E /* MainViewController.swift */,
+				105280AA26E7FBD000D909A2 /* ContactListViewController.swift */,
 				101D176326E926AC00C8797E /* SecondContactListViewController.swift */,
+				1052808F26E7E94600D909A2 /* InfoViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
