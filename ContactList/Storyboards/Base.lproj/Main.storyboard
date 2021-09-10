@@ -44,7 +44,6 @@
         <!--Contact-->
         <scene sceneID="3Yf-ka-uzI">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="3Ch-fv-GfV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController id="1Hb-bu-R97" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Contact" image="person.circle" catalog="system" id="LYb-H5-vaQ"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="zPB-rN-ejt">
@@ -55,6 +54,7 @@
                         <segue destination="vA6-L6-FSh" kind="relationship" relationship="rootViewController" id="2yv-yx-Vmj"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3Ch-fv-GfV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-775" y="-586"/>
         </scene>
@@ -92,6 +92,10 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="toK-lh-4vU"/>
+                    <connections>
+                        <outlet property="emailPersonLabel" destination="NoM-fh-5BR" id="fMM-WW-Nyu"/>
+                        <outlet property="phonePersonLabel" destination="xiA-IC-gVi" id="rrI-0C-RAX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
