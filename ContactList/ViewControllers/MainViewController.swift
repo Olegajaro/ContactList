@@ -18,8 +18,8 @@ class MainViewController: UITabBarController {
     
     private func setupViewControllers() {
         let contactList = Person.getPerson()
-        let contactListVC = viewControllers?.first as! ContactListViewController
-        let secondContactListVC = viewControllers?.last as! SecondContactListViewController
+        guard let contactListVC = viewControllers?.first as? ContactListViewController else { return }
+        guard let secondContactListVC = viewControllers?.last as? SecondContactListViewController else { return }
         
         contactListVC.contacts = contactList
         secondContactListVC.contacts = contactList
