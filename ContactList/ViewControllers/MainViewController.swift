@@ -8,25 +8,21 @@
 import UIKit
 
 class MainViewController: UITabBarController {
-
-    private var contactList = Person.getPerson()
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        setupViewControllers()
+    }
 
     // MARK: - Navigation
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let tabBarController = segue.destination as? UITabBarController else { return }
-        guard let viewControllers = tabBarController.viewControllers else { return }
+    private func setupViewControllers() {
+        let contactList = Person.getPerson()
+        let contactListVC = viewControllers?.first as! ContactListViewController
+        let secondContactListVC = viewControllers?.last as! SecondContactListViewController
         
-        //for viewController in viewControllers {
-        if let firstNavigationVC = viewControllers[0] as? UINavigationController {
-            guard let contactListVC = firstNavigationVC.topViewController as? ContactListViewController else { return }
-            
-            contactListVC.contacts = contactList
-        } else if let secondNavigationVC = viewControllers[1] as? UINavigationController {
-            let secondContactListVC = secondNavigationVC.topViewController as! SecondContactListViewController
-            
-            secondContactListVC.contacts = contactList
-        }
+        contactListVC.contacts = contactList
+        secondContactListVC.contacts = contactList
     }
 }
 

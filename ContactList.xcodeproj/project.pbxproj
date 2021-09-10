@@ -72,6 +72,7 @@
 				105280A426E7E9E700D909A2 /* ViewControllers */,
 				105280A526E7EA0500D909A2 /* Models */,
 				105280A326E7E9D400D909A2 /* Storyboards */,
+				107DF6A226EBB93E00857885 /* Services */,
 				105280A226E7E9C100D909A2 /* Resources */,
 				105280A126E7E98200D909A2 /* App */,
 			);
@@ -120,9 +121,16 @@
 			isa = PBXGroup;
 			children = (
 				105280A626E7EA3C00D909A2 /* Person.swift */,
-				105280A826E7EA4D00D909A2 /* DataManager.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		107DF6A226EBB93E00857885 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				105280A826E7EA4D00D909A2 /* DataManager.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

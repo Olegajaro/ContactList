@@ -21,16 +21,16 @@ class SecondContactListViewController: UITableViewController {
     override func numberOfSections(in tableView: UITableView) -> Int {
         contacts.count
     }
-
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         2
     }
 
-//    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-//        let cell = tableView.dequeueReusableCell(withIdentifier: "contactTwo", for: indexPath)
-//
-//        return cell
-//    }
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "contactTwo", for: indexPath)
+
+        return cell
+    }
 
     /*
     // Override to support conditional editing of the table view.

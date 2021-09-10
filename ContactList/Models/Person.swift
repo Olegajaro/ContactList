@@ -18,10 +18,10 @@ struct Person {
     static func getPerson() -> [Person] {
         var persons: [Person] = []
         
-        let namesPersons = Set(DataManager.data().names)
-        let surnamesPersons = Set(DataManager.data().surnames)
-        let phonesPersons = Set(DataManager.data().phones)
-        let emailsPersons = Set(DataManager.data().emails)
+        let namesPersons = Set(DataManager.shared.names)
+        let surnamesPersons = Set(DataManager.shared.surnames)
+        let phonesPersons = Set(DataManager.shared.phones)
+        let emailsPersons = Set(DataManager.shared.emails)
         
         let sequenceNameSurname = Dictionary(uniqueKeysWithValues: zip(
                 namesPersons,
