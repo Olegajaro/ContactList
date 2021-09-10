@@ -6,10 +6,10 @@
 //
 
 struct Person {
-    var name:String
-    var surname: String
-    var phone: String
-    var email: String
+    let name:String
+    let surname: String
+    let phone: String
+    let email: String
     
     var fullName: String {
         "\(name) \(surname)"
@@ -18,18 +18,18 @@ struct Person {
     static func getPerson() -> [Person] {
         var persons: [Person] = []
         
-        let namesPersons = Set(DataManager.shared.names)
-        let surnamesPersons = Set(DataManager.shared.surnames)
-        let phonesPersons = Set(DataManager.shared.phones)
-        let emailsPersons = Set(DataManager.shared.emails)
+        let names = Set(DataManager.shared.names)
+        let surnames = Set(DataManager.shared.surnames)
+        let phones = Set(DataManager.shared.phones)
+        let emails = Set(DataManager.shared.emails)
         
         let sequenceNameSurname = Dictionary(uniqueKeysWithValues: zip(
-                namesPersons,
-                surnamesPersons
+                names,
+                surnames
             ))
         let sequencePhoneEmail = Dictionary(uniqueKeysWithValues: zip(
-                phonesPersons,
-                emailsPersons
+                phones,
+                emails
             ))
         
         let total = Array(zip(sequenceNameSurname, sequencePhoneEmail))
